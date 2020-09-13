@@ -10,18 +10,27 @@ if (a + b == 10){
 }
 
 
-int x = 2;
-int y = 2;
-int z = 2;
+
+int x = 6;
+int y = 11;
+int z = 13;
 int result = x + y + z;
 
-if (x != 10 || x != 20 || x != 30){
-  if (y != 10 || y != 20 || y != 30){
-    if (z != 10 || z != 20 || z != 30){
-      println("SUCCESS");
-    }
+
+if (result == 30){
+  if (x == 10 || x == 20 || x == 30){
+    println("FAILURE");
+  } else {
+    if (y == 10 || y == 20 || y == 30){
+    println("FAILURE");
+  } else {
+    if (z == 10 || z == 20 || z == 30){
+    println("FAILURE");
+  } else {
+    println("SUCCESS");
+  }
+  }
   }
 } else {
   println("FAILURE");
 }
-  
