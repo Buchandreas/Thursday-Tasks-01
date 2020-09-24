@@ -21,7 +21,15 @@ void setup(){
   // TASK 5B ////////////////////////////////////
   
   // TASK 5C ////////////////////////////////////
+  println("////////////////////////////////////////////////////////////");
   findStudentByName(studs, studs[0].name);
+  findStudentByName(studs, studs[3].name);
+  findStudentByName(studs, studs[5].name);
+  findStudentByName(studs, studs[7].name);
+  findStudentByName(studs, studs[8].name);
+  findStudentByName(studs, studs[9].name);
+
+
 }
 
 // TASK 5B ////////////////////////////////////
@@ -35,13 +43,15 @@ void printStudentName(Student[] tmpStuds, int tmpIndex){
 
 
 // TASK 5C ////////////////////////////////////
-//Couldn't find a viable solution to this task unfortunately
-String name = "Christian";
+//Couldn't find a viable solution to this task unfortunately.
+//But I did play around with quite a few different solutions.
+//In the end I managed to get 95% through, but I couldn't find a way
+// to print an index in Processing without doing some lengthy logic coding.
 
 void findStudentByName(Student[] tmpStuds, String tmpName){
   for (int i = 0; i <= tmpStuds.length -1; i++){
-    if (tmpName == name){
-      
+    if (tmpName == tmpStuds[i].name){
+      println(tmpName);
     }
   
   }
